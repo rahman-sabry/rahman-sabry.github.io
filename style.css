@@ -897,6 +897,20 @@ body {
     border-bottom: none;
 }
 
+.skill-card--link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.skill-card--link:hover {
+    background: var(--bg-surface);
+}
+
+.skill-card--link:hover .skill-card-name {
+    color: var(--accent);
+}
+
 .skill-card--expandable {
     cursor: pointer;
     user-select: none;
