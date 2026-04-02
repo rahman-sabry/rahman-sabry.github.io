@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rahman — Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">AR</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <span class="nav-status"><span class="status-dot"></span>Available</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section section--hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="hero-tag">Backend Developer</span>
+                    <h1 class="hero-name">Abdul Rahman<br>Bin Mohamad Sabry</h1>
+                    <p class="hero-desc">Building maintainable and scalable backend systems for insurance web applications at Tigerlab. Based in Kuala Lumpur, Malaysia.</p>
+                    <div class="hero-links">
+                        <a href="mailto:amansab96@gmail.com" class="btn btn--primary">Get in touch</a>
+                        <a href="#experience" class="btn btn--ghost">View experience</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">3.5<small>yr</small></span>
+                            <span class="hero-stat-label">Dev Experience</span>
+                        </div>
+                        <div class="hero-stat-sep"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">5<small>yr</small></span>
+                            <span class="hero-stat-label">Finance Background</span>
+                        </div>
+                        <div class="hero-stat-sep"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">4</span>
+                            <span class="hero-stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-photo-wrap">
+                    <img src="assets/profile-dark.JPG" alt="Abdul Rahman" class="hero-photo hero-photo--dark">
+                    <img src="assets/profile-light.JPG" alt="Abdul Rahman" class="hero-photo hero-photo--light">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-num">01</span>
+                    <h2 class="section-heading">About</h2>
+                </div>
+                <div class="about-layout">
+                    <div class="about-content">
+                        <p class="reveal reveal-delay-1">I'm a backend developer at Tigerlab, where I build and maintain insurance web applications for enterprise clients using Python, Django, and Django REST Framework. Over three and a half years, my scope has expanded well beyond backend code — I now regularly work across containerised deployments, cloud infrastructure, and AI-powered features.</p>
+                        <p class="reveal reveal-delay-2">Before switching to software, I spent nearly three years at PERKESO as an investment analyst. A data pipeline I built in Excel VBA and PowerQuery M — which cut analyst processing time by over 50% — made it clear that building tools was what I actually wanted to do. I taught myself Python and made the transition.</p>
+                        <p class="reveal reveal-delay-3">My early work was focused on Django features and debugging production issues. Over time I took on increasingly complex ownership — delivering the Renewals module for a client as the sole developer, redesigning a cancellation and refund system without disrupting live business flows, and resolving server-side database issues that weren't reproducible locally.</p>
+                        <p class="reveal reveal-delay-4">More recently I've been growing into DevOps and AI. I containerised an application for UAT using Docker and Kamal on AWS Graviton instances, managed a production S3 migration with zero client downtime, and built the foundational document embedding service that will power context-aware AI features in our platform. I'm AWS Certified and actively deepening my cloud architecture knowledge. I'm also expanding my frontend capability through React — the goal is to be genuinely useful across the stack.</p>
+                    </div>
+                    <aside class="about-aside reveal reveal-delay-2">
+                        <div class="about-fact">
+                            <span class="about-fact-label">Location</span>
+                            <span class="about-fact-value">Kuala Lumpur, Malaysia</span>
+                        </div>
+                        <div class="about-fact">
+                            <span class="about-fact-label">Role</span>
+                            <span class="about-fact-value">Back End Developer</span>
+                        </div>
+                        <div class="about-fact">
+                            <span class="about-fact-label">Company</span>
+                            <span class="about-fact-value">Tigerlab</span>
+                        </div>
+                        <div class="about-fact">
+                            <span class="about-fact-label">Stack</span>
+                            <span class="about-fact-value">Python · Django · AWS</span>
+                        </div>
+                        <div class="about-fact">
+                            <span class="about-fact-label">Education</span>
+                            <span class="about-fact-value">University of Manchester</span>
+                        </div>
+                        <div class="about-fact">
+                            <span class="about-fact-label">Status</span>
+                            <span class="about-fact-value about-fact-value--available">Open to opportunities</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-num">02</span>
+                    <h2 class="section-heading">Experience</h2>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline-company reveal reveal-delay-1">
+                        <div class="company-header">
+                            <h3 class="company-name">Tigerlab</h3>
+                            <span class="company-duration">3 yrs 9 mos</span>
+                        </div>
+                        <div class="roles">
+                            <div class="role">
+                                <div class="role-header">
+                                    <span class="role-title">Back End Developer</span>
+                                    <span class="role-dates">Dec 2023 — Present</span>
+                                </div>
+                                <p class="role-desc">Leading backend development for client-facing insurance web applications, with responsibilities spanning new feature development, code review, and system architecture decisions.</p>
+                            </div>
+                            <div class="role">
+                                <div class="role-header">
+                                    <span class="role-title">Junior Back-end Developer</span>
+                                    <span class="role-dates">Jul 2022 — Nov 2023</span>
+                                </div>
+                                <p class="role-desc">Designed and maintained code using the Django framework to provide clients a customised web application for their insurance solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-company reveal reveal-delay-2">
+                        <div class="company-header">
+                            <h3 class="company-name">PERKESO</h3>
+                            <span class="company-duration">2 yrs 11 mos</span>
+                        </div>
+                        <div class="roles">
+                            <div class="role">
+                                <div class="role-header">
+                                    <span class="role-title">Equity Analyst</span>
+                                    <span class="role-dates">Sep 2021 — Jul 2022</span>
+                                </div>
+                                <p class="role-desc">Overviewed 3 major sectors in the Malaysian public equity market — technology, telecommunication, and automotive.</p>
+                            </div>
+                            <div class="role">
+                                <div class="role-header">
+                                    <span class="role-title">Private Equity Analyst</span>
+                                    <span class="role-dates">Mar 2021 — Aug 2021</span>
+                                </div>
+                                <p class="role-desc">Sourced and evaluated investment opportunities in the global private equity market with a focus on ESG and Impact Funds.</p>
+                            </div>
+                            <div class="role">
+                                <div class="role-header">
+                                    <span class="role-title">Front Office Dealer</span>
+                                    <span class="role-dates">Mar 2020 — Feb 2021</span>
+                                </div>
+                                <p class="role-desc">Executed trades with brokers across Equity and Bond markets.</p>
+                            </div>
+                            <div class="role">
+                                <div class="role-header">
+                                    <span class="role-title">Management Associate</span>
+                                    <span class="role-dates">Sep 2019 — Feb 2020</span>
+                                </div>
+                                <p class="role-desc">Engineered and presented management solutions to PERKESO's top management and staff to create a more sustainable talent pipeline.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-num">03</span>
+                    <h2 class="section-heading">Education</h2>
+                </div>
+                <div class="education-list">
+                    <div class="edu-item reveal reveal-delay-1">
+                        <div class="edu-header">
+                            <h3 class="edu-school">The University of Manchester</h3>
+                            <span class="edu-dates">2016 — 2019</span>
+                        </div>
+                        <p class="edu-degree">BA (Hons) Accounting and Finance, Social Sciences</p>
+                    </div>
+                    <div class="edu-item reveal reveal-delay-2">
+                        <div class="edu-header">
+                            <h3 class="edu-school">MARA Ketengah International College</h3>
+                            <span class="edu-dates">2014 — 2016</span>
+                        </div>
+                        <p class="edu-degree">CIE A-Level — Accounting, Pure Mathematics, Business Studies, General Paper</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-num">04</span>
+                    <h2 class="section-heading">Testimonials</h2>
+                </div>
+                <div class="testimonials-grid">
+
+                    <div class="testimonial reveal reveal-delay-1">
+                        <p class="testimonial-quote">"Works independently, doesn't complain, and is willing to work on any task assigned. His pace of progression has been impressive — always being exposed to various technical problems and finding solutions. He has a good attitude which makes it easy to work and collaborate with."</p>
+                        <span class="testimonial-attribution">Engineering Manager</span>
+                    </div>
+
+                    <div class="testimonial reveal reveal-delay-2">
+                        <p class="testimonial-quote">"He always delivers and is ready to spend extra hours outside of working hours to satisfy client needs. Always involved in any client-related request, he takes extra time to understand the problem and communicates solutions clearly to the product and business teams."</p>
+                        <span class="testimonial-attribution">Team Lead</span>
+                    </div>
+
+                    <div class="testimonial reveal reveal-delay-3">
+                        <p class="testimonial-quote">"Always puts extra effort into understanding requirements and asking the right questions. When something isn't right, he knows where to find guidance. He can work with anyone in the team or outside of it — always ready to share responsibility on any task."</p>
+                        <span class="testimonial-attribution">Senior Developer</span>
+                    </div>
+
+                    <div class="testimonial reveal reveal-delay-4">
+                        <p class="testimonial-quote">"The ability to debug and understand requirements in detail is a key strength. The input he gives sometimes lets the team see tasks from entirely different perspectives. He has shown a great desire in AWS, AI, and automation — and knows about system architecture."</p>
+                        <span class="testimonial-attribution">Engineering Manager</span>
+                    </div>
+
+                    <div class="testimonial testimonial--wide reveal reveal-delay-5">
+                        <p class="testimonial-quote">"He has great potential — willing to listen to feedback and work on any task. He's always trying to upskill himself and explore new frameworks and automation to increase development and debugging speed. I'm happy to have him on the team."</p>
+                        <span class="testimonial-attribution">Senior Developer</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-num">05</span>
+                    <h2 class="section-heading">Skills &amp; Certifications</h2>
+                </div>
+
+                <div class="skills-categories reveal reveal-delay-1">
+                    <div class="skill-category-block">
+                        <div class="skill-category-label">
+                            <span class="skill-cat-dot skill-cat-dot--cyan"></span>
+                            Backend
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Python</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Built a document embedding service as foundational AI infrastructure for the client platform, and designed an n8n automation workflow that enabled the support team to handle client inquiries at scale.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Django</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Delivered the Renewals feature for a key client end-to-end as the sole developer — shipped to production. Later redesigned a client's cancellation and refund system without disrupting existing business flows.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Django REST Framework</span>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">PostgreSQL</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Debugged complex queryset and read replica issues for a client — not reproducible locally — by analysing server-side data conditions and applying targeted fixes.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Sentry</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Led a Sentry housekeeping effort that reduced the number of active error types beyond the initial target, significantly improving observability across the platform.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-block">
+                        <div class="skill-category-label">
+                            <span class="skill-cat-dot skill-cat-dot--violet"></span>
+                            Frontend
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">HTML &amp; CSS</span>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">React.js</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Completed Meta's React Basics and Advanced React certifications. Recognised by the team as a growing capability, with potential to contribute across the full stack.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Django Templates</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-block">
+                        <div class="skill-category-label">
+                            <span class="skill-cat-dot skill-cat-dot--green"></span>
+                            Cloud &amp; DevOps
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Amazon Web Services</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Deployed containerised apps on AWS Graviton (ARM) for cost efficiency. Executed an overnight S3 storage migration with zero client disruption, staying with the deployment until full resolution.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Docker</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Containerised the client application for a client's UAT environment using Docker and Kamal, deploying on AWS ARM-based instances — modernising the deployment workflow and reducing environment inconsistencies.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Linux &amp; Nginx</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Applied Linux server administration and Nginx to architect a multi-environment routing system, optimising how traffic is distributed across application instances.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--expandable">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">n8n</span>
+                                    <span class="skill-card-chevron"></span>
+                                </div>
+                                <div class="skill-card-body">
+                                    <p>Built a workflow automation that allows the support team to manage customer inquiries at scale, reducing manual overhead on client-facing operations.</p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Git</span>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Excel VBA &amp; PowerQuery M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-block">
+                        <div class="skill-category-label">
+                            <span class="skill-cat-dot skill-cat-dot--warm"></span>
+                            Certifications
+                        </div>
+                        <div class="skill-cards skill-cards--certs">
+                            <div class="skill-card skill-card--cert">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">AWS Cloud Practitioner</span>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--cert">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">Advanced React</span>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--cert">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">React Basics</span>
+                                </div>
+                            </div>
+                            <div class="skill-card skill-card--cert">
+                                <div class="skill-card-top">
+                                    <span class="skill-card-name">AI for Everyone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-num">06</span>
+                    <h2 class="section-heading">Contact</h2>
+                </div>
+                <p class="contact-desc reveal reveal-delay-1">Open to new opportunities. Feel free to reach out.</p>
+                <div class="contact-links reveal reveal-delay-2">
+                    <a href="mailto:amansab96@gmail.com" class="contact-link">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">amansab96@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdul-rahman-bin-mohamad-sabry-3a4632185" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">abdul-rahman-bin-mohamad-sabry</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Abdul Rahman Bin Mohamad Sabry</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const icon = toggle.querySelector('.toggle-icon');
+
+        const saved = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', saved);
+        icon.textContent = saved === 'dark' ? '☀' : '☾';
+
+        toggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            icon.textContent = next === 'dark' ? '☀' : '☾';
+        });
+
+        // Expandable skills
+        document.querySelectorAll('.skill-card--expandable').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('is-open');
+            });
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // 3D tilt on testimonials
+        document.querySelectorAll('.testimonial').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transition = 'box-shadow 0.3s, border-color 0.3s';
+                card.style.transform = `perspective(700px) rotateX(${-y * 5}deg) rotateY(${x * 6}deg) translateZ(4px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s, border-color 0.3s';
+                card.style.transform = 'perspective(700px) rotateX(0) rotateY(0) translateZ(0)';
+            });
+        });
+    </script>
+</body>
+</html>
