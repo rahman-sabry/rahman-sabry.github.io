@@ -1267,6 +1267,53 @@ body {
     color: rgba(124, 58, 237, 0.12);
 }
 
+/* ── Theme transition ripple ── */
+@property --ripple-r {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
+}
+
+@keyframes theme-ripple-out {
+    from { --ripple-r: 0px; }
+    to   { --ripple-r: 3000px; }
+}
+
+@keyframes theme-ripple-in {
+    from { --ripple-r: 3000px; }
+    to   { --ripple-r: 0px; }
+}
+
+/* dark → light: new (light) expands out from button with soft edge */
+:root[data-ripple-dir="to-light"]::view-transition-new(root) {
+    animation: theme-ripple-out 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    mix-blend-mode: normal;
+    mask-image: radial-gradient(
+        circle at var(--ripple-x, 50%) var(--ripple-y, 50%),
+        black calc(var(--ripple-r) - 120px),
+        transparent var(--ripple-r)
+    );
+}
+:root[data-ripple-dir="to-light"]::view-transition-old(root) {
+    animation: none;
+}
+
+/* light → dark: old (light) collapses into button with soft edge */
+:root[data-ripple-dir="to-dark"]::view-transition-old(root) {
+    animation: theme-ripple-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    mix-blend-mode: normal;
+    z-index: 1;
+    mask-image: radial-gradient(
+        circle at var(--ripple-x, 50%) var(--ripple-y, 50%),
+        black calc(var(--ripple-r) - 120px),
+        transparent var(--ripple-r)
+    );
+}
+:root[data-ripple-dir="to-dark"]::view-transition-new(root) {
+    animation: none;
+    z-index: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .reveal {
         opacity: 1;
@@ -1297,6 +1344,11 @@ body {
     }
 
     .nav-logo {
+        animation: none;
+    }
+
+    ::view-transition-new(root),
+    ::view-transition-old(root) {
         animation: none;
     }
 }
